@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 with requests.session() as c:
     url = 'https://passport.douguo.com/login/?next=/'
     username = 'hao.jin@outlook.com'
-    password = 'loveyou'
+    password = ''
     c.get(url)
     login_data = dict(username=username,password=password,next='/')
     c.post(url,data=login_data)
